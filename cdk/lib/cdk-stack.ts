@@ -57,6 +57,6 @@ export class CdkStack extends cdk.Stack {
       })
     })
 
-    amplifyApp.addBranch("main", { stage: "DEV" })
+    amplifyApp.addBranch("main", { stage: "PRODUCTION" })
   }
 }
