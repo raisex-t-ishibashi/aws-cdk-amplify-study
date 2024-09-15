@@ -12,7 +12,7 @@ export interface CdkStackProps extends cdk.StackProps {
 }
 
 export class CdkStack extends cdk.Stack {
-  constructor(scope: Construct, id: string, props?: CdkStackProps) {
+  constructor(scope: Construct, id: string, props: CdkStackProps) {
     super(scope, id, props);
 
     const amplifyApp = new amplify.App(this, "AmplifyAppReactSample", {
